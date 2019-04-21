@@ -1,6 +1,6 @@
-## react-tabs-adaptive
+# react-tabs-adaptive
 
-A simple adaptive react tabs component
+A simple customizable react tabs component with adaptive design
 
 ## Installation
 
@@ -15,4 +15,4 @@ yarn add react-tabs-adaptive
 ## Usage
 
 
-
+##Available Props
