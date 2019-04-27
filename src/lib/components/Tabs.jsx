@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Scrollbars} from 'react-custom-scrollbars'
 
-import "./Tabs.scss"
+import "../styles/Tabs.scss"
 
 /**
  * Tabs - parent component
