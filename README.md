@@ -2,7 +2,8 @@
 
 A simple customizable react tabs component with adaptive design
 
-[![npm version](https://badge.fury.io/js/react-tabs-adaptive.svg)](https://badge.fury.io/js/react-tabs-adaptive)
+[![Build Status](https://travis-ci.com/nikita-slb/react-tabs-adaptive.svg?branch=master)](https://travis-ci.com/nikita-slb/react-tabs-adaptive) [![npm version](https://badge.fury.io/js/react-tabs-adaptive.svg)](https://badge.fury.io/js/react-tabs-adaptive)
+
 
 # Installation
 
