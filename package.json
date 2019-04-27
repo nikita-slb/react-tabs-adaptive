@@ -3,7 +3,7 @@
   "description": "A simple customizable react tabs component with adaptive design",
   "author": "Nikita Slobozhaninov",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -25,9 +25,9 @@
     "extends": "react-app"
   },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react-custom-scrollbars": "^4.2.1",
-    "node-sass": "^4.11.0"
+    "react-custom-scrollbars": "^4.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

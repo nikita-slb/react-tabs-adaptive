@@ -7,7 +7,7 @@ A simple customizable react tabs component with adaptive design
 # Installation
 
 ```
-npm i react-tabs-adaptive
+npm install react-tabs-adaptive --save
 ```
 
 or
