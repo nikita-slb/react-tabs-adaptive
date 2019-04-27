@@ -15,12 +15,6 @@
     "type": "git",
     "url": "https://github.com/nikita-slb/react-tabs-adaptive"
   },
-  "dependencies": {
-    "node-sass": "^4.11.0",
-    "prop-types": "^15.7.2",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-test-renderer": "^16.8.6"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
@@ -30,21 +24,27 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "node-sass": "^4.11.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

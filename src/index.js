@@ -5,7 +5,7 @@ import { Tabs, Tab } from "./lib";
 const App = () => (
     <div className="App">
         <Tabs>
-            <Tab tabName="Tab 1 large">
+            <Tab tabName="Tab 1">
                 <p>
                     Lorem ipsum dolor sit amet, eum alterum patrioque in, ex ius urbanitas forensibus
                     interpretaris.
