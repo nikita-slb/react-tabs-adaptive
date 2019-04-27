@@ -60,8 +60,10 @@ class App extends React.Component {
   
   render() {
   
+     const {activeTabIndex} = this.state;
+  
      return (
-        <Tabs activeTabIndex={this.state.activeTabIndex} selectTab={this.setState({activeTabIndex})}>
+        <Tabs activeTabIndex={activeTabIndex} selectTab={(activeTabIndex)=>this.setState({activeTabIndex})}>
             <Tab tabName="Tab 1">
                 <p>
                      Lorem ipsum dolor sit amet, eum alterum patrioque in, ex ius urbanitas forensibus

@@ -13,11 +13,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikita-slb/react-tabs-adaptive"
+    "url": "git@github.com:nikita-slb/react-tabs-adaptive.git"
   },
+  "homepage": "https://github.com/nikita-slb/react-tabs-adaptive",
+  "keywords": [
+    "react",
+    "tabs",
+    "react-component"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
