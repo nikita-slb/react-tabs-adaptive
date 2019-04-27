@@ -1,11 +1,11 @@
-import React from "react";
-import {Tabs, Tab} from "../index";
-import renderer from "react-test-renderer";
+import React from 'react';
+import { Tabs, Tab } from '../index';
+import renderer from 'react-test-renderer';
 
-describe("Tabs", () => {
-    it("renders properly", () => {
-        const tree = renderer
-            .create(
+describe('Tabs', () => {
+  it('renders properly', () => {
+    const tree = renderer
+        .create(
                 <Tabs>
                     <Tab tabName="Tab 1">
                         Tab 1 text
@@ -16,6 +16,7 @@ describe("Tabs", () => {
                 </Tabs>
             )
             .toJSON();
-        expect(tree).toMatchSnapshot();
-    });
+
+    expect(tree).toMatchSnapshot();
+  });
 });
