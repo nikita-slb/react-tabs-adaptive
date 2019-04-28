@@ -37,33 +37,7 @@ exports[`Tabs renders properly 1`] = `
         >
           <ul
             className="Tabs-Items"
-          >
-            <li
-              className="Tab Tab-active"
-              onClick={[Function]}
-            >
-              <span
-                className="Tab-name"
-              >
-                Tab 1
-              </span>
-            </li>
-            <li
-              className="Tab "
-              onClick={[Function]}
-            >
-              <span
-                className="Tab-name"
-              >
-                Tab 2
-                <span
-                  className="TabCounter"
-                >
-                  4
-                </span>
-              </span>
-            </li>
-          </ul>
+          />
         </div>
         <div
           style={
@@ -118,8 +92,6 @@ exports[`Tabs renders properly 1`] = `
   </div>
   <div
     className="Tabs-Active-Content"
-  >
-    Tab 1 text
-  </div>
+  />
 </div>
 `;

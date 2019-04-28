@@ -1,3 +1,5 @@
+/* eslint getter-return: "off" */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -9,19 +11,19 @@ class Tab extends React.Component {
     let { isActive, tabName, counter, tabIndex } = this.props;
 
     return (
-            <li className={`Tab ${isActive ? 'Tab-active' : ''}`}
-                onClick={() => this.props.onClick(tabIndex)}>
+      <li className={`Tab ${isActive ? 'Tab-active' : ''}`}
+          onClick={() => this.props.onClick(tabIndex)}>
                 <span className='Tab-name'>
-                    {
-                        tabName
-                    }
-                    {
-                        counter > 0 && (
-                            <span className='TabCounter'>{counter}</span>
-                        )
-                    }
+                  {
+                    tabName
+                  }
+                  {
+                    counter > 0 && (
+                      <span className='TabCounter'>{counter}</span>
+                    )
+                  }
                 </span>
-            </li>
+      </li>
     );
   }
 }

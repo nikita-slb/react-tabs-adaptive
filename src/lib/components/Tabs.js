@@ -1,3 +1,5 @@
+/* eslint getter-return: "off" */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Scrollbars } from 'react-custom-scrollbars';
@@ -159,14 +161,16 @@ class Tabs extends React.Component {
    * @returns {function[]} Array react child components.
    */
   renderChildrenTabs () {
-    return this.props.children.map((child, index) => {
-      return React.cloneElement(child, {
-        key: index,
-        onClick: this.handleTabClick,
-        tabIndex: index,
-        isActive: index === this.state.activeTabIndex
-      });
-    });
+    return this.props.children
+      ? this.props.children.map((child, index) => {
+        return React.cloneElement(child, {
+          key: index,
+          onClick: this.handleTabClick,
+          tabIndex: index,
+          isActive: index === this.state.activeTabIndex
+        });
+      })
+      : null;
   }
 
   /**
@@ -178,7 +182,7 @@ class Tabs extends React.Component {
     const { children } = this.props;
     const { activeTabIndex } = this.state;
 
-    if (children[activeTabIndex]) {
+    if (children && children[activeTabIndex]) {
       return children[activeTabIndex].props.children;
     }
 
@@ -250,10 +254,10 @@ class Tabs extends React.Component {
   getTabsSize () {
     let tabsSize = [];
 
-    let tabNodes = this.tabItemsRef.current.childNodes;
+    const tabNodes = this.tabItemsRef.current.childNodes;
 
     tabNodes.forEach((node) => {
-      let { offsetLeft, offsetWidth } = node;
+      const { offsetLeft, offsetWidth } = node;
 
       tabsSize.push({ offsetLeft, offsetWidth });
     });

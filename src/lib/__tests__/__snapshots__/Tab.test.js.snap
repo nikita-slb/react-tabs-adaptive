@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab renders properly 1`] = `
+<li
+  className="Tab "
+  onClick={[Function]}
+>
+  <span
+    className="Tab-name"
+  >
+    Tab
+  </span>
+</li>
+`;

@@ -3,7 +3,7 @@
   "description": "A simple customizable react tabs component with adaptive design",
   "author": "Nikita Slobozhaninov",
   "license": "MIT",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -25,8 +25,14 @@
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
-    "lint": "node_modules/.bin/goodparts src/lib",
+    "coverage": "yarn test src/lib --coverage -u",
+    "lint": "node_modules/.bin/goodparts src",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/lib/**/*.{js,jsx}"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +45,8 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "goodparts": "^1.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
