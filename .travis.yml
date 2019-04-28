@@ -5,7 +5,8 @@ before_install:
  - curl -o- -L https://yarnpkg.com/install.sh | bash
  - export PATH="$HOME/.yarn/bin:$PATH"
 install:
-  - yarn global add -g codecov
+  - yarn global add codecov
+  - yarn install
 cache:
   yarn: true
   directories:
@@ -14,4 +15,4 @@ script:
   - yarn lint
   - yarn build
   - yarn test -- --coverage
-  -codecov
+  - codecov
