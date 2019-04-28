@@ -2,7 +2,7 @@
 
 A simple customizable react tabs component with adaptive design
 
-[![npm version](https://badge.fury.io/js/react-tabs-adaptive.svg)](https://badge.fury.io/js/react-tabs-adaptive) [![Build Status](https://travis-ci.com/nikita-slb/react-tabs-adaptive.svg?branch=master)](https://travis-ci.com/nikita-slb/react-tabs-adaptive) [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts") [![codecov](https://codecov.io/gh/nikita-slb/react-tabs-adaptive/branch/master/graph/badge.svg)](https://codecov.io/gh/nikita-slb/react-tabs-adaptive)
+![npm](https://img.shields.io/npm/v/react-tabs-adaptive.svg?color=blue) [![Build Status](https://travis-ci.com/nikita-slb/react-tabs-adaptive.svg?branch=master)](https://travis-ci.com/nikita-slb/react-tabs-adaptive) [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts") [![codecov](https://codecov.io/gh/nikita-slb/react-tabs-adaptive/branch/master/graph/badge.svg)](https://codecov.io/gh/nikita-slb/react-tabs-adaptive)
 
 
 # Installation
