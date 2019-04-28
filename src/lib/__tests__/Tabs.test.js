@@ -1,19 +1,18 @@
+/* eslint getter-return: "off" */
+
 import React from 'react';
-import { Tabs, Tab } from '../index';
+import { Tabs } from '../index';
 import renderer from 'react-test-renderer';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 describe('Tabs', () => {
   it('renders properly', () => {
     const tree = renderer
         .create(
-                <Tabs>
-                    <Tab tabName="Tab 1">
-                        Tab 1 text
-                    </Tab>
-                    <Tab tabName="Tab 2" counter={4}>
-                        Tab 2 text
-                    </Tab>
-                </Tabs>
+                <Tabs/>
             )
             .toJSON();
 
