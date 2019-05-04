@@ -3,7 +3,7 @@
   "description": "A simple customizable react tabs component with adaptive design",
   "author": "Nikita Slobozhaninov",
   "license": "MIT",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
