@@ -19,6 +19,35 @@ describe('Tabs', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('test click scroll arrow', () => {
+    const spyLeft = jest.spyOn(Tabs.prototype, 'scrollLeft');
+    const spyRight = jest.spyOn(Tabs.prototype, 'scrollRight');
+
+    const TabsComponent = mount((
+      <Tabs>
+        <Tab tabName="Tab 1">Tab 1</Tab>
+        <Tab tabName="Tab 2">Tab 2</Tab>
+      </Tabs>
+    ));
+
+    TabsComponent.setState({ showLeftArrow: true, showRightArrow: true });
+
+    TabsComponent
+    .find('div.Tab-arrow-left')
+    .at(0)
+    .simulate('click');
+
+    TabsComponent
+    .find('div.Tab-arrow-right')
+    .at(0)
+    .simulate('click');
+
+    expect(spyLeft).toHaveBeenCalledTimes(1);
+    expect(spyRight).toHaveBeenCalledTimes(1);
+
+    TabsComponent.unmount();
+  });
+
   it('test select tab handler', () => {
     const clickFn = jest.fn(activeTabIndex => activeTabIndex);
     const selectedTabIndex = 1;
